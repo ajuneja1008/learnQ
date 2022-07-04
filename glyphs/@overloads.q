@@ -14,7 +14,6 @@ container @/ i
 
 
 
-
 / 2. Apply at
 
 / 2.1 Evaluate a monoadic function at an argument (index)
@@ -25,11 +24,9 @@ function @ index
 
 
 
-
-
 / 3. Amend at
 
- Amends certain indices of a container through a monoadic or a dyadic function
+/ Amends certain indices of a container through a monoadic or a dyadic function
 / Can have 3 or 4 arguments, first argument is a container which can be passed by name or value
 / Returns the updated container of the same type when passed by value or name of th container updated in-place when passed by name. 
 
@@ -51,8 +48,6 @@ function @ index
 @[1 2 3 4; 0 1; :; 10 20]
 @[list; 0 1; :; 10 20] / does not update list when passed by value(: does not update left argument with an adverb in this case each-both)
 @[`list; 0 1; :; 10] / updates list when passed by name
-
-
 
 
 
